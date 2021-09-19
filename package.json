@@ -1,0 +1,22 @@
+{
+  "name": "palimdromic",
+  "version": "1.0.0",
+  "description": "palindrome",
+  "main": "palindrome.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "andy",
+  "babel": {
+    "env": {
+      "test": {
+        "plugins": ["@babel/plugin-transform-modules-commonjs"]
+      }
+    }
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.15.4",
+    "jest": "^27.2.0"
+  }
+}
