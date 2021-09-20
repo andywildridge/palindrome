@@ -7,7 +7,9 @@ import oddValues from "./oddValues";
 */
 
 const palindrome = (str) => {
-  if(typeof str !== "string") { return false; }
+  if (typeof str !== "string") {
+    return false;
+  }
   /* Transform the string to lowercase and remove spaces */
   const strToLowerNoSpaces = str.replace(/\s/g, "").toLowerCase();
 
@@ -15,7 +17,7 @@ const palindrome = (str) => {
       occurs in the string */
   const charMap = charFrequency(strToLowerNoSpaces);
 
-  /* if  charachtless than 2ers occur an odd number of times, then
+  /* if less than 2 characters occur an odd number of times, then
     the string can be arranged to read the same forwards and backwards */
   return oddValues(charMap) < 2;
 }
